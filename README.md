@@ -18,7 +18,8 @@ This is for a clean bacula installation. You need the ceph-common package to get
 2. Modify *rbdchanger1.conf* to accommodate your settings
 3. Create the rbd pool: ```rados mkpool bacula```
 4. Create the mount point for image staging: ```mkdir -p /mnt/bacula```
-5. Modify your bacula-sd.conf like this: ```
+5. Modify your bacula-sd.conf like this:
+```
 Autochanger {
   Name = rbdchanger1;
   Device = rbdchanger1_drive0;
@@ -40,7 +41,8 @@ Device {
   Always Open = yes;
 }
 ```
-6. And you bacula-dir.conf like this: ```
+6. And you bacula-dir.conf like this:
+```
 Storage {
   Name = File
 # Do not use "localhost" here    
