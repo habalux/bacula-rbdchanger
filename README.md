@@ -53,7 +53,8 @@ Storage {
   #Device = FileStorage
   Media Type = File;
   Autochanger = yes;
-}```
+}
+```
 7. Run ```/etc/bacula/rbdchanger.py /etc/bacula/rbdchanger1.conf labelnew```
    - It should create *cephVolume00001* for you
    - Make a couple more images for fun
